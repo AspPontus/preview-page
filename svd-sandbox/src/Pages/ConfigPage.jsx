@@ -5,13 +5,13 @@ function ConfigPage() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('')
     const [route, setRoute] = useState('svd_fullscreenscroll');
+
     const linkRef = useRef();
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         setLoading(true)
-       
         
         const response = await fetch('http://localhost:8000/api/iframe', {
             method: 'POST',

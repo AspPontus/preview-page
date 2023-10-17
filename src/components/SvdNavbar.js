@@ -70,7 +70,6 @@ function SvdNavbar({ type }) {
             <input id="welcome-page" type="checkbox" onInput={(e) => handleCheckbox(e)} /> 
         </div>
       </form>
-      <button className='primary-btn nav-btn' onClick={() => navigate('/')}>Go back</button>
     </nav>
   )
 }

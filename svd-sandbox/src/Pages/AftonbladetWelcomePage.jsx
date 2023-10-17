@@ -20,7 +20,6 @@ function AftonbladetWelcomePage() {
         
         <div className="continue-scroll">
             <p>Scrolla ner till Aftonbladet</p>
-
             <div className='scroll-down'>
               <div className='arrow-down'></div>
               <div className='arrow-down '></div>

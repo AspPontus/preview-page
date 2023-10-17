@@ -11,19 +11,20 @@ function AftonbladetWelcomePage() {
     <div>
         <div className="ad-wp">ANNONS</div>
         <div className="ad-wp settings"><AiFillSetting /></div>
-        <img 
-        className='close-ad' 
-        src="https://www.aftonbladet.se/cnp-assets/270dc27ed59eaee8abe172f26c20cbba.png" 
-        alt="" />
+        
+        <div className='close-ad'>
+          <div className='close-line'></div>
+          <div className='close-line rot-90'></div>
+        </div>
         <Iframe type={'welcome-page'}/>
         
         <div className="continue-scroll">
             <p>Scrolla ner till Aftonbladet</p>
-            <img 
-            className='scroll-down' 
-            src="https://www.aftonbladet.se/cnp-assets/499db3d2b1645ed1e375bd24c855887d.png" 
-            alt="" 
-            />
+
+            <div className='scroll-down'>
+              <div className='arrow-down'></div>
+              <div className='arrow-down '></div>
+            </div>
         </div>
         <div className="welcome-page-page">
             <SvdNavbar type={'welcome-page-nav'}/>

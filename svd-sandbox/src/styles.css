@@ -8,19 +8,6 @@ body {
     background-color: lightgray;
 }
 
-/* .error {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(245, 34, 34, 0.763);
-    height: 60px;
-    font-family: sans-serif;
-    transition: .5s;
-} */
-
 /* Preview form */
 .sandbox-form label {
     font-size: 16px;
@@ -45,11 +32,6 @@ body {
     width: 100%;
 }
 
-/* #cms-link {
-    width: 80%;
-    padding: .3rem .5rem;
-} */
-
 .primary-btn {
     padding: .5rem 2rem;
     background-color: #f55502;
@@ -64,12 +46,6 @@ body {
     cursor: pointer;
     opacity: .8;
 }
-
-/* .disclaimer {
-    width: 70%;
-    font-weight: 400;
-    font-size: 10px;
-} */
 
 .checkbox {
     width: 100%;
@@ -128,54 +104,6 @@ nav.active {
     font-weight: 400;
     margin: 0rem 4rem;
 }
-
-/* .loader {
-    width: 60px;
-    height: 60px;
-    display: none;
-}
-
-.loader.active {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
-    align-items: center;
-    gap: .2rem;
-}
- */
-/* .dot {
-    aspect-ratio: 1/1;
-    width: 20px;
-    border-radius: 50%;
-    background-color: rgb(79, 79, 79)
-}
-
-.dot1 {
-    animation: loading .5s infinite;
-}
-
-.dot2 {
-    animation: loading .5s infinite .2s;
-}
-
-.dot3 {
-    animation: loading .5s infinite .4s;
-}
-
-@keyframes loading {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.15);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-} */
 
 /* Fake articles */
 
@@ -340,6 +268,15 @@ article {
     width: 54px;
 }
 
+.arrow-down{
+    aspect-ratio: 1/1;
+    width: 18px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+    margin-top: -.5rem;
+}
+
 .close-ad {
     position: fixed;
     z-index: 5;
@@ -347,7 +284,20 @@ article {
     left: 16px;
     aspect-ratio: 1/1;
     width: 22px;
+    transform: rotate(45deg);
 }
+
+.close-line{
+    position: absolute;
+    width: 25px;
+    height: 2px ;
+    background-color: #fff;
+}
+
+.rot-90{
+    transform: rotate(90deg);
+}
+
 
 .ad-wp {
     position: fixed;
@@ -480,9 +430,6 @@ article {
     }
 
     .title {
-        /* font-weight: 400;
-        margin: 0rem;
-        font-size: 26px; */
         display: none;
     }
 

@@ -56,21 +56,18 @@ function SvdNavbar({ type }) {
     <nav className={show ? `nav active ${type}` : `nav ${type}`}>
       <h3 className='title'>Schibsted Navbar</h3>
       <form className='sandbox-form'>
-        <p className='disclaimer'>*Make sure that the preview link only contains the creative you want to test</p>
-
-        <div className="fss-to-check">
+        
           <div className='checkbox'>
-            <label htmlFor="fullscreenscroll">FullScreenScroll: </label>
+            <label htmlFor="fullscreenscroll">FullScreenScroll </label>
             <input id="fullscreenscroll" type="checkbox" defaultChecked onInput={(e) => handleCheckbox(e)}  />
           </div>
           <div className='checkbox'>
-            <label htmlFor="takeover">Takeover: </label>
+            <label htmlFor="takeover">Takeover </label>
             <input id="takeover" type="checkbox" onInput={(e) => handleCheckbox(e)} /> 
           </div>
           <div className='checkbox'>
-            <label htmlFor="welcome-page">Welcome Page: </label>
+            <label htmlFor="welcome-page">WelcomePage </label>
             <input id="welcome-page" type="checkbox" onInput={(e) => handleCheckbox(e)} /> 
-          </div>   
         </div>
       </form>
       <button className='primary-btn nav-btn' onClick={() => navigate('/')}>Go back</button>

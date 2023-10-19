@@ -9,9 +9,6 @@ body {
 }
 
 /* Preview form */
-.select-preview-format {
-    font-size: 16px;
-}
 
 .select-preview-format:hover {
     cursor: pointer;
@@ -23,13 +20,7 @@ body {
     font-family: sans-serif;
     align-items: center;
     gap: 1.5rem;
-}
-
-.input-label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    font-size: 16px;
 }
 
 .primary-btn {

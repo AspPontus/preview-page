@@ -15,7 +15,7 @@ function SvdNavbar({ type }) {
       } else {
         handleShow(false);
       }
-    });
+    }); 
   }, []);
 
   useEffect(() => {
@@ -26,11 +26,16 @@ function SvdNavbar({ type }) {
     } else {
       setId('');
     }
+
+    const selectedPreview = segments[1].split('_')
+    let selectedStyles = document.querySelector(`#${selectedPreview[1]}`)
+    selectedStyles.classList.add('selected')
+
   }, [location]);
 
-  const handleCheckbox = (e) => {
+  const handleSelectedPreview = (e) => {
     let newRoute = 'svd_fullscreenscroll';
-
+    
     switch (e.target.id) {
       case 'fullscreenscroll':
         newRoute = 'svd_fullscreenscroll';
@@ -55,21 +60,11 @@ function SvdNavbar({ type }) {
   return (
     <nav className={show ? `nav active ${type}` : `nav ${type}`}>
       <h3 className='title'>Schibsted Navbar</h3>
-      <form className='sandbox-form'>
-        
-          <div className='checkbox'>
-            <label htmlFor="fullscreenscroll">FullScreenScroll </label>
-            <input id="fullscreenscroll" type="checkbox" defaultChecked onInput={(e) => handleCheckbox(e)}  />
-          </div>
-          <div className='checkbox'>
-            <label htmlFor="takeover">Takeover </label>
-            <input id="takeover" type="checkbox" onInput={(e) => handleCheckbox(e)} /> 
-          </div>
-          <div className='checkbox'>
-            <label htmlFor="welcome-page">WelcomePage </label>
-            <input id="welcome-page" type="checkbox" onInput={(e) => handleCheckbox(e)} /> 
-        </div>
-      </form>
+      <div className="select-preview-format">
+        <div className='selected-preview' id="fullscreenscroll"  onClick={(e) => handleSelectedPreview(e)}>FullScreenScroll</div>
+        <div className='selected-preview' id="takeover" onClick={(e) => handleSelectedPreview(e)}>Takeover</div>
+        <div className='selected-preview' id="welcome-page" onClick={(e) => handleSelectedPreview(e)}>WelcomePage</div>
+      </div>
     </nav>
   )
 }

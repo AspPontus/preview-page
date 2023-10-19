@@ -9,15 +9,15 @@ body {
 }
 
 /* Preview form */
-.sandbox-form label {
+.select-preview-format {
     font-size: 16px;
 }
 
-.sandbox-form label:hover {
+.select-preview-format:hover {
     cursor: pointer;
 }
 
-.sandbox-form {
+.select-preview-format {
     display: flex;
     background-color: #fff;
     font-family: sans-serif;
@@ -47,20 +47,17 @@ body {
     opacity: .8;
 }
 
-.checkbox {
+.selected-preview {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-.checkbox:hover {
+.selected-preview:hover {
     text-decoration: underline;
     cursor: pointer;
-}
-
-input[type='checkbox'] {
-    display: none;
+    color: #f55302ab;
 }
 
 /* Fake newspage */
@@ -88,6 +85,11 @@ nav {
 
 nav.active {
     height: 56px;
+}
+
+.selected{
+    color: #f55502;
+    text-decoration: underline;
 }
 
 .welcome-page-nav {
@@ -422,10 +424,8 @@ article {
         all: unset;
     }
 
-    .sandbox-form{
+    .select-preview-format{
         gap: 1rem;
-    }
-    .sandbox-form label{
         font-size: 2.5vw;
     }
 

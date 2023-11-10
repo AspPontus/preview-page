@@ -6,10 +6,10 @@
 
 body {
     background-color: lightgray;
+    overflow-x: hidden;
 }
 
 /* Preview form */
-
 .select-preview-format:hover {
     cursor: pointer;
 }
@@ -52,7 +52,6 @@ body {
 }
 
 /* Fake newspage */
-
 nav {
     position: fixed;
     top: 0;
@@ -81,16 +80,6 @@ nav.active {
 .selected{
     color: #f55502;
     text-decoration: underline;
-}
-
-.welcome-page-nav {
-    position: relative;
-}
-
-.welcome-page-page {
-    position: relative;
-    top: 88.5vh;
-    transition: .5s;
 }
 
 .title {
@@ -234,57 +223,10 @@ article {
     height: calc(100vh - 76px);
 }
 
-.welcome-page {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-}
-
-.continue-scroll {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 15.5vh;
-    font-size: 26px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 350px;
-    max-width: 100%;
-    color: #fff;
-    font-family: Arial, sans-serif;
-}
-
 .scroll-down {
     margin-top: 22px;
     aspect-ratio: 1/1;
     width: 54px;
-}
-
-.arrow-down{
-    aspect-ratio: 1/1;
-    width: 18px;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    transform: rotate(45deg);
-    margin-top: -.5rem;
-}
-
-.close-ad {
-    position: fixed;
-    z-index: 5;
-    top: 42px;
-    left: 16px;
-    aspect-ratio: 1/1;
-    width: 22px;
-    transform: rotate(45deg);
-}
-
-.close-line{
-    position: absolute;
-    width: 25px;
-    height: 2px ;
-    background-color: #fff;
 }
 
 .rot-90{
@@ -312,29 +254,10 @@ article {
     margin-top: 56px;
 }
 
+
 @media only screen and (max-width: 970px) {
     body::-webkit-scrollbar {
         display: none;
-    }
-
-    .welcome-page-nav {
-        position: relative;
-        width: 100vw;
-    }
-
-    .welcome-page-page {
-        position: absolute;
-        top: 88.5vh;
-        transition: .5s;
-    }
-
-    .continue-scroll {
-        font-size: 18px;
-    }
-
-    .scroll-down {
-        margin-top: 19px;
-        width: 26px;
     }
 
     .title {

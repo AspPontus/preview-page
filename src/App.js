@@ -4,7 +4,7 @@ import {
   Routes,
   useParams,
 } from "react-router-dom";
-import "./styles.css";
+import "./Styles/styles.css";
 import SvDFSS from "./Pages/SvDFSS";
 import SvDTakeover from "./Pages/SvDTakeover";
 import AftonbladetWelcomePageOne from "./Pages/AftonbladetWelcomePage";

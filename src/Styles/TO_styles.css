@@ -1,0 +1,5 @@
+.takeover {
+    position: fixed;
+    top: 76px;
+    height: calc(100vh - 76px);
+}

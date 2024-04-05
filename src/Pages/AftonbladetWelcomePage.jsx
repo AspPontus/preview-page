@@ -5,7 +5,7 @@ import SvdNavbar from "../components/SvdNavbar";
 import ContentBlock from "../components/ContentBlock";
 import {AiFillSetting} from 'react-icons/ai'
 
-function AftonbladetWelcomePage() {
+function AftonbladetWelcomePage({site}) {
   const [gapFromTop, setGapFromTop] = useState('88.5vh');
   const [scrollDownGap, setScrollDownGap] = useState('0rem');
 
@@ -18,7 +18,16 @@ function AftonbladetWelcomePage() {
     iframe.style.height = `${window.innerHeight}px`
   }
 
-  const fetchUserOS = () => {
+  const fetchUserUA = () => {
+
+    if (site === 'SvD' && window.innerWidth > 450) {
+      setGapFromTop('calc(100svh - 76px)')
+      return;
+    } else if (site === 'SvD' && window.innerWidth < 450) {
+      setGapFromTop('calc(100svh - 56px)')
+      return;
+    }
+
     const userAgent = window.navigator.userAgent
         // Windows Phone must come first because its UA also contains "Android"
       if (/windows phone/i.test(userAgent)) {
@@ -40,12 +49,12 @@ function AftonbladetWelcomePage() {
 
   
   useEffect(() => {
-    fetchUserOS()
+    fetchUserUA()
     resizeIframe()
-  }, [])
+  }, [site])
 
   return (
-    <div className='mobile-size-adjustment'>
+    <div className={`mobile-size-adjustment ${site}`}>
         <div className="ad-wp">ANNONS</div>
         <div className="ad-wp settings"><AiFillSetting /></div>
         
@@ -56,18 +65,20 @@ function AftonbladetWelcomePage() {
 
         <Iframe type={'welcome-page'} />
         
-        <div className="continue-scroll" style={{marginBottom: scrollDownGap}}>
-            <p>Scrolla ner till Aftonbladet</p>
+        <div className={`continue-scroll ${site}`} style={{marginBottom: scrollDownGap}}>
+            <p>Scrolla ner till {site}</p>
             <img className='arrow-down' src="https://play2.s3.amazonaws.com/assets/Kg9_Xfveb.png" alt="" />
         </div>
       
-        <div className="welcome-page-page" style={{top: gapFromTop}}>
+        <div className={`welcome-page-page ${site}`} style={{top: gapFromTop}}>
         
             <SvdNavbar type={'welcome-page-nav'}/>
+            <div className="article-block">
             <ContentBlock />
             <ContentBlock />
             <ContentBlock />
             <ContentBlock />
+            </div>
         </div>
         
     </div>

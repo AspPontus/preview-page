@@ -51,7 +51,7 @@ function AftonbladetWelcomePage({site}) {
   useEffect(() => {
     fetchUserUA()
     resizeIframe()
-  }, [site])
+  })
 
   return (
     <div className={`mobile-size-adjustment ${site}`}>

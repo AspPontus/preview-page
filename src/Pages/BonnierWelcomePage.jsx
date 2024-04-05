@@ -5,16 +5,6 @@ import Iframe from '../components/Iframe'
 import '../Styles/Bonnier_Welcome_Page.css'
 
 function BonnierWelcomePage() {
-
-    window.addEventListener('resize', () => {
-        const width = document.querySelector('.bonnier-welcome-page-container').getBoundingClientRect().width;
-        const height = document.querySelector('.bonnier-welcome-page-container').getBoundingClientRect().height;
-        if (height <  (width / 1.77777777) * .72 )  {
-            console.log('test', document.querySelector('.bonnier-welcome-page'))
-            document.querySelector('.bonnier-welcome-page').style.height = `137vh !important`
-            document.querySelector('.bonnier-welcome-page').style.width = `auto !important`
-        }
-    })
     
   return (
     <div>

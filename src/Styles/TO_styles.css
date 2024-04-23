@@ -1,5 +1,19 @@
 .takeover {
     position: fixed;
-    top: 76px;
-    height: calc(100vh - 76px);
+    top: 48px;
+    height: calc(100vh);
+}
+
+.takeover-nav{
+    height: 48px;
+}
+
+@media only screen and (min-width: 820px){
+    .takeover-nav{
+        height: 76px;
+    }
+
+    .takeover {
+        top: 76px;
+    }
 }

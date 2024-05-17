@@ -1,0 +1,46 @@
+.wallpaper-container{
+    position: absolute;
+    top: 100px;
+    left: calc(50% + 16px);
+    transform: translate(-50%);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    transition: 0s;
+    justify-content: center;
+}
+
+.wallpaper{
+    width: 1600px;
+    height: 900px;
+}
+
+.ad-disclaimer{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    padding: .3rem 0rem;
+}
+
+body{
+    background-color: rgb(236, 236, 236);
+}
+
+.article-wallpaper{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    top: calc(273px + 88px + 8px);
+    width: 100%;
+    max-width: 1294px;
+}
+
+@media (max-width: 1294px){
+    .wallpaper-container{
+        left: 0;
+        transform: translate(calc(-140px));
+    }
+}

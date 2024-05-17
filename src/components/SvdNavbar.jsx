@@ -36,9 +36,6 @@ function SvdNavbar({ type }) {
     const selectedPreview = segments[1].split('_')
     // set route to current format
     setRoute(selectedPreview[1])
-
-    console.log(selectedPreview);
-
   }, [location]);
 
 

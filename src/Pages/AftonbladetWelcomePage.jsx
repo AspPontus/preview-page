@@ -6,8 +6,8 @@ import ContentBlock from "../components/ContentBlock";
 import {AiFillSetting} from 'react-icons/ai'
 
 function AftonbladetWelcomePage({site}) {
-  const [gapFromTop, setGapFromTop] = useState('88.5vh');
-  const [scrollDownGap, setScrollDownGap] = useState('0rem');
+/*   const [gapFromTop, setGapFromTop] = useState('88.5vh');
+  const [scrollDownGap, setScrollDownGap] = useState('0rem'); */
 
   window.addEventListener('resize', async () => {
     resizeIframe()
@@ -18,8 +18,7 @@ function AftonbladetWelcomePage({site}) {
     iframe.style.height = `${window.innerHeight}px`
   }
 
-  const fetchUserUA = () => {
-
+/*   const fetchUserUA = () => {
     if (site === 'SvD' && window.innerWidth > 450) {
       setGapFromTop('calc(100svh - 76px)')
       return;
@@ -45,11 +44,11 @@ function AftonbladetWelcomePage({site}) {
         setScrollDownGap('0rem')
           return "Desktop";
       }
-  };
+  }; */
 
   
   useEffect(() => {
-    fetchUserUA()
+    /* fetchUserUA() */
     resizeIframe()
   })
 
@@ -65,12 +64,12 @@ function AftonbladetWelcomePage({site}) {
 
         <Iframe type={'welcome-page'} />
         
-        <div className={`continue-scroll ${site}`} style={{marginBottom: scrollDownGap}}>
+        <div className={`continue-scroll ${site}`}/*  style={{marginBottom: scrollDownGap}} */>
             <p>Scrolla ner till {site}</p>
             <img className='arrow-down' src="https://play2.s3.amazonaws.com/assets/Kg9_Xfveb.png" alt="" />
         </div>
       
-        <div className={`welcome-page-page ${site}`} style={{top: gapFromTop}}>
+        <div className={`welcome-page-page ${site}`} /* style={{top: gapFromTop} }*/>
         
             <SvdNavbar type={'welcome-page-nav'}/>
             <div className="article-block">
@@ -80,7 +79,6 @@ function AftonbladetWelcomePage({site}) {
             <ContentBlock />
             </div>
         </div>
-        
     </div>
   )
 }

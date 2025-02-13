@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import '../Styles/NAV_styles.css'
-import DropdownMenu from './DropdownMenu';
+import './NAV_styles.css'
+import DropdownMenu from '../Dropdown/DropdownMenu';
 
 function SvdNavbar({ type }) {
   const [show, handleShow] = useState(false);
@@ -80,7 +80,7 @@ function SvdNavbar({ type }) {
 
   return (
     <nav className={show ? `nav active ${type}` : `nav ${type}`}>
-      <h3 className='title'>Schibsted Navbar</h3>
+      <h3 className='title'>Navbar</h3>
       <DropdownMenu 
       handleSelectedPreview={handleSelectedPreview}
       route={route}

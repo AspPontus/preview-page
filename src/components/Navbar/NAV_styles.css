@@ -10,6 +10,7 @@ nav{
     align-items: center;
     padding: 0rem 1rem;
     transition: .5s;
+    z-index: 100;
 }
 
 nav.active{

@@ -1,6 +1,12 @@
 
 iframe{
-    transition: .5s;
+    transition: 0s;
+}
+
+
+
+.ad-space{
+    height: 88.5vh;
 }
 
 .welcome-page-nav {
@@ -11,22 +17,15 @@ iframe{
 /* Aftonbladet */
 .welcome-page-page {
     position: relative;
-    top: 88.5vh;
+    top: 0vh;
     transition: .5s;
     z-index: 5;
 }
-/* SvD */
-/* .welcome-page-page {
-    position: relative;
-    top: 100vh;
-    transition: .5s;
-} */
-
 
 .welcome-page {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+
     padding: 0px 0px 0px 0px;
     /* to not clickout on dropdown */
     z-index: -1;
@@ -96,35 +95,11 @@ iframe{
 
 
 @media only screen and (max-width: 970px) {
-    .mobile-size-adjustment.Aftonbladet{
-        position: absolute;
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .mobile-size-adjustment.SvD{
-        height: 100dvh;
-    }
-
-    .welcome-page{
-        padding: 0;
-    }
-
-    .welcome-page-nav {
-        position: relative;
-        width: 100vw;
-    }
 
     .arrow-down{
         aspect-ratio: 1/1;
         width: 26px;
         margin-top: 19px;
-    }
-
-    .welcome-page-page {
-        position: absolute;
-        top: 88.5vh;
-        transition: .5s;
     }
 
     .continue-scroll {
@@ -134,21 +109,4 @@ iframe{
         filter: drop-shadow(2px 2px 2px rgba(0,0,0,.2));
     }
     
-    .scroll-down {
-        margin-top: 19px;
-        width: 26px;
-    }
-
-    .close-line{
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
-    }
-
-    .continue-scroll.SvD{
-        bottom: 86px;
-        font-size: 20px;
-        margin-bottom: 0 !important;
-    }
 }

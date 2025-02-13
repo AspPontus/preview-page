@@ -1,5 +1,5 @@
 import React, {useRef, useEffect, useState} from 'react'
-import '../Styles/dropdown_styles.css'
+import './dropdown_styles.css'
 
 function DropdownMenu({handleSelectedPreview, route}) {
     // declare format options in the dropdown
@@ -8,7 +8,7 @@ function DropdownMenu({handleSelectedPreview, route}) {
         {identifier:  "fullscreenscroll-io", title: "FullScreenScroll IO", selected: false}, 
         {identifier: "takeover", title: "Takeover (PG/IO)", selected: false}, 
         {identifier: "welcome-page-aft", title: "Welcome Page (Aft)", selected: false},
-        {identifier: "welcome-page-svd", title: "Welcome Page (SvD)", selected: false},
+        /* {identifier: "welcome-page-svd", title: "Welcome Page (SvD)", selected: false}, */
         {identifier: "wallpaper", title: "Wallpaper (Desktop)", selected: false},
         {identifier: "double-midscroll", title: "Double Midscroll", selected: false},
       ];

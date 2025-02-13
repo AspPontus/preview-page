@@ -1,8 +1,8 @@
 import React from 'react'
-import SvdNavbar from '../components/SvdNavbar'
-import ContentBlock from '../components/ContentBlock'
-import Iframe from '../components/Iframe'
-import '../Styles/wallpaper_styles.css'
+import SvdNavbar from '../../components/Navbar/SvdNavbar'
+import ContentBlock from '../../components/ContentBlock/ContentBlock'
+import Iframe from '../../components/Iframe'
+import './wallpaper_styles.css'
 
 function AftonbladetWallpaper() {
   return (

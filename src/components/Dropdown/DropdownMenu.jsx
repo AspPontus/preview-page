@@ -1,5 +1,5 @@
 import React, {useRef, useEffect, useState} from 'react'
-import '../Styles/dropdown_styles.css'
+import './dropdown_styles.css'
 
 function DropdownMenu({handleSelectedPreview, route}) {
     // declare format options in the dropdown

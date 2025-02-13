@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    overflow-x: hidden;
+}
+
+.ad {
+    position: fixed;
+    top: 56px;
+    margin: 16px;
+    padding: 10px;
+    background-color: #ffffffc4;
+    font-size: 16px;
+    width: 90%;
+    z-index: 2;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings {
+    right: 0;
+    font-size: 12px;
+    border-bottom-left-radius: 10px;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,9 +1,0 @@
-.double-midscroll-container{
-    height: 200vh ;
-    z-index: 25;
-}
-
-.double-midscroll{
-    width: 100vw;
-    height: 200vh !important;
-}

@@ -1,4 +1,5 @@
 import React from 'react'
+import './ContentBlock.css'
 
 function ContentBlock() {
   return (

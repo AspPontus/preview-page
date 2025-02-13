@@ -1,6 +1,5 @@
 .fss-container {
     position: relative;
-    height: 0vh;
     margin-top: 56px;
     margin: 0;
     height: calc(100vh - 56px);
@@ -13,8 +12,6 @@
     position: fixed;
     top: 56px;
     z-index: 1;
-    height: 56px;
-    width: 100%;
     width: 100vw;
     height: 100vh;
     border: none;
@@ -23,6 +20,10 @@
 .fss-container.io{
     height: 100vh;
 }
+.fss.programmatic{
+    height: calc(100vh - 56px);
+}
+
 
 .fss-nav.programmatic{
     opacity: 1 !important;

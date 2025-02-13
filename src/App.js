@@ -4,12 +4,13 @@ import {
   Routes,
   useParams,
 } from "react-router-dom";
-import "./Styles/styles.css";
-import SvDFSS from "./Pages/SvDFSS";
-import SvDTakeover from "./Pages/SvDTakeover";
-import AftonbladetWelcomePageOne from "./Pages/AftonbladetWelcomePage";
-import AftonbladetWallpaper from "./Pages/AftonbladetWallpaper";
-import DoubleMidscroll from "./Pages/DoubleMidscroll";
+import "./styles.css";
+import SvDFSS from "./Pages/FullScreenScroll/SvDFSS";
+import SvDTakeover from "./Pages/Takeover/SvDTakeover";
+import AftonbladetWelcomePageOne from "./Pages/AftonbladetWelcomePage/AftonbladetWelcomePage";
+import AftonbladetWallpaper from "./Pages/Wallpaper/AftonbladetWallpaper";
+import DoubleMidscroll from "./Pages/DoubleMidscroll/DoubleMidscroll";
+import DoubleMidscrollFrame from "./Pages/DoubleMidscroll/DoubleMidscrollFrame";
 
 function SvDFSSPage(purchase) {
   const { id } = useParams();
@@ -37,6 +38,7 @@ function App() {
         <Route path="/svd_welcome-page-svd/:id" element={<AftonbladetWelcomePage site={"SvD"} />} />
         <Route path="/aft_wallpaper/:id" element={<AftonbladetWallpaper />} />
         <Route path="/sts_double-midscroll/:id" element={<DoubleMidscroll />} />
+        <Route path="/sts_double-midscroll-frame/:id" element={<DoubleMidscrollFrame />} />
       </Routes>
     </Router>
   );

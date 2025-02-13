@@ -1,7 +1,7 @@
 .takeover {
     position: fixed;
     top: 48px;
-    height: calc(100vh);
+    height: calc(100vh - 76px);
 }
 
 .takeover-nav{

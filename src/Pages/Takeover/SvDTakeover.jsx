@@ -1,7 +1,7 @@
 import React from 'react'
-import SvdNavbar from '../components/SvdNavbar'
-import Iframe from '../components/Iframe'
-import '../Styles/TO_styles.css'
+import SvdNavbar from '../../components/Navbar/SvdNavbar'
+import Iframe from '../../components/Iframe'
+import './TO_styles.css'
 
 function SvDTakeover() {
   return (

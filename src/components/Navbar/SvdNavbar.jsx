@@ -66,6 +66,9 @@ function SvdNavbar({ type }) {
       case 'double-midscroll':
         newRoute = 'sts_double-midscroll';
         break;
+      case 'double-midscroll-legacy':
+        newRoute = 'sts_double-midscroll-legacy';
+        break;
       default:
         newRoute = 'svd_fullscreenscroll';
     }

@@ -11,6 +11,7 @@ function DropdownMenu({handleSelectedPreview, route}) {
         /* {identifier: "welcome-page-svd", title: "Welcome Page (SvD)", selected: false}, */
         {identifier: "wallpaper", title: "Wallpaper (Desktop)", selected: false},
         {identifier: "double-midscroll", title: "Double Midscroll", selected: false},
+        {identifier: "double-midscroll-legacy", title: "Double Midscroll (legacy)", selected: false},
       ];
     const selectedSelect = document.querySelector('#selected-select');
     const [optionVis, setOptionVis] = useState(false);

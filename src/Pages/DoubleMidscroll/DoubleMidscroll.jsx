@@ -7,8 +7,18 @@ import './Double_Midscroll_styles.css'
 function DoubleMidscroll() {
   const [frame, setFrame] = useState(); // Hold foreground iframe
   const [videoMessage, setVideoMessage] = useState({}); // Containe
-  const [waypoints, setWaypoints] = useState([]);
+ /*  const [waypoints, setWaypoints] = useState([]);
   const [claimedIDs, setClaimedIDs] = useState([]); // is this needed, can i get this data from waypoints? should it be a state?
+ */
+  const waypoints = [];
+  const claimedWaypointIds = [];
+
+  const currentStatus = {
+    backgroundVideo: {},
+    waypoints: [],
+    currentWaypointIDs: [],
+    trigger: {},
+  };
   
   function getLastThreshold(percentage, waypoints) {
     waypoints.sort((a, b) => a.threshold - b.threshold); // Sort thresholds in ascending order (optional, depending on the input)
@@ -29,6 +39,7 @@ function DoubleMidscroll() {
     const triggerAction = (waypoint) => {
       // if waypoint, send postmessage to the iframe containing the foreground
       if (waypoint) {
+        const frame = document.querySelector('.double-midscroll-foreground')
         if (frame.contentWindow == null) return;
         const message = {
           action: "addWaypoint", // action name
@@ -38,14 +49,16 @@ function DoubleMidscroll() {
           callbackId: waypoint.eventId,  // Unique callbackId
           isIntersecting: true // Signal that the threshold is active
         };
+        currentStatus.trigger = {messageStatus: "sent", message: message};
         frame.contentWindow.postMessage(JSON.stringify(message), "*"); // Send message
       }
     }
   
     // Listen for messages
-    window.addEventListener('message', (e) => {      
+    window.addEventListener('message', (e) => {    
       if(e.origin === "https://video.seenthis.se") {
         if (typeof(e.data) === 'string'){
+          currentStatus.backgroundVideo = {messageStatus: "sent"};
           const obj = JSON.parse(e.data); // Parse data
           if (obj.video_url) {
             setVideoMessage(JSON.parse(e.data)); // Set background video url
@@ -53,9 +66,12 @@ function DoubleMidscroll() {
           }
           
           if (obj.action === 'addWaypoint') {
-            if (claimedIDs.includes(obj.eventId)) return; // If eventId already exists, do not add the waypoint again
-            setWaypoints(waypoints => [...waypoints, obj]); // Add waypoints
-            setClaimedIDs(prevClaimedIDs => [...prevClaimedIDs, obj.eventId]); // Save the added eventId
+            /* if (claimedIDs.includes(obj.eventId)) return; // If eventId already exists, do not add the waypoint again */
+            /* setWaypoints(waypoints => [...waypoints, obj]); // Add waypoints */
+            if (claimedWaypointIds.includes(obj.eventId) && obj.frame === "seenthis_tag_container")
+            waypoints.push(obj)
+            claimedWaypointIds.push(obj.eventId);
+            /* setClaimedIDs(prevClaimedIDs => [...prevClaimedIDs, obj.eventId]); // Save the added eventId */
             return;
           }
         }
@@ -69,8 +85,8 @@ function DoubleMidscroll() {
     const invertMultiplication = -1; // Inverts positive and negative numbers
     // Listen to scroll event
     window.addEventListener('scroll', () => {
-
-
+      currentStatus.currentWaypointIDs = claimedWaypointIds;
+      currentStatus.waypoints = waypoints;
 
       const top = document.querySelector('.double-midscroll-container')?.getBoundingClientRect().top; // Check "ad window" distance from top
       const bottom = document.querySelector('.double-midscroll-container')?.getBoundingClientRect().bottom; // Check "ad window" distance from bottom
@@ -86,9 +102,6 @@ function DoubleMidscroll() {
       }
 
 
-
-     
-
       if (!document.querySelector('.double-midscroll-background')) return;
       let procent = 0; // Procent scrolled (0 - when it starts entering the screen, 100 - when the last pixel leaves the screen)
       
@@ -102,11 +115,13 @@ function DoubleMidscroll() {
       // If the waypoints array is empty, return
       if (waypoints.length === 0) return;
       triggerAction(getLastThreshold(procent, waypoints)); // Get the active threshold and send that waypoint object to the iframe
-      
+
+      console.clear();
+      console.log(currentStatus)
     }, false)
     
 
-  }, [waypoints, claimedIDs, frame])
+  }, [waypoints, claimedWaypointIds, frame])
 
   // Set the background video to the specified background file from the foreground
   if(videoMessage.video_url) {

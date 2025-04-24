@@ -9,6 +9,46 @@
       content="Web site created using create-react-app"
     />
     <title>Preview Ad Page</title>
+    <script>
+      window.addEventListener("message", (e) => {
+        e.source ===
+          document.querySelector("[name=seenthis_tag_container]")
+            .contentWindow && top.postMessage(e.data, "*");
+      }),
+        window.addEventListener("message", (e) => {
+          e.source === window.top &&
+            document
+              .querySelector("[name=seenthis_tag_container]")
+              .contentWindow.postMessage(e.data, "*");
+        });
+    </script>
+    <script>
+      function sendMessage() {
+        var p = {
+          action: "doublefullscreen",
+          identifier: "",
+          callback: "am.libs.adsFullscreen.doubleFullscreen",
+          video_url: "${backgroundCreativeUrl}",
+          type: "bazaar:parallax:x2",
+          foreground_url: "${backgroundCreativeUrl}",
+        };
+        window.top.postMessage(p, "*"),
+          window.top.postMessage(JSON.stringify(p), "*");
+      }
+      function addWaypoint(n, t) {
+        return (
+          (n.action = "addWaypoint"),
+          (n.eventId = btoa(Math.random()).substring(0, 12)),
+          (n.frame = window.name),
+          (document.querySelector(
+            "[name=seenthis_tag_container]"
+          ).contentWindow.callbacks[n.eventId] = t),
+          window.top.postMessage(JSON.stringify(n), "*"),
+          window.top.postMessage(n, "*"),
+          n.eventId
+        );
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

@@ -37,6 +37,7 @@ function DoubleMidscroll() {
   useEffect(() => {
 
     const triggerAction = (waypoint) => {
+      console.log(window)
       // if waypoint, send postmessage to the iframe containing the foreground
       if (waypoint) {
         const frame = document.querySelector('.double-midscroll-foreground')

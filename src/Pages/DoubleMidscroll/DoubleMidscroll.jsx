@@ -130,7 +130,6 @@ function DoubleMidscroll() {
     
   }, [])
 
-  console.log(videoMessage)
 
   // Set the background video to the specified background file from the foreground
   if(videoMessage.video_url) {

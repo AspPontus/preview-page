@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="ad.size" content="width=1920,height=1080" charset="UTF-8" />
+    <title>v3:00iuyw3SwjQTqwlYYbiEh</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <script>
+      var seenthisInit = function () {
+          var t = {};
+          try {
+            if (
+              ((t = JSON.parse(
+                '{"inscreen":true,"muteButton":true,"loop":false,"loopCount":0,"fitToFormat":false,"avEnabled":false,"seenthisTagEnabled":true,"autoplay":true,"bigPlayButton":true,"includeMacroTracking":false,"attentionScore":false,"telemetryEnabled":true}'
+              )).fitToFormat &&
+                document.querySelector("#player").classList.add("fitToFormat"),
+              t.moatTracking)
+            ) {
+              var e = document.querySelector("#player"),
+                r = document.querySelector("#creative"),
+                n = document.createElement("div");
+              n.setAttribute("id", "ad"),
+                n.setAttribute("style", "width: 100%; height: 100%;"),
+                e.parentNode.insertBefore(n, e),
+                n.appendChild(e),
+                n.appendChild(r);
+            }
+          } catch (t) {}
+          window.seenthisController.init(
+            "v3:00iuyw3SwjQTqwlYYbiEh",
+            "12hmaprzj25idhrk5k3c2blfw9o42hmaprzj52n46taav62mjeg6mk735rgniab8111i258p91hxyo6dia3ed9ed49b1qm3lx0dc12t3hlynd3alzoda8e3hacn309f2rnmyl5mg2hw9pl64h4wlq1l1f13ft",
+            "VKKRp4Mjl-",
+            t
+          );
+        },
+        primaryClickTagName = "clickTag1",
+        clickTag1 =
+          "https://track.adform.net/C/?bn=79883295;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50}",
+        clickTag2 =
+          "https://track.adform.net/C/?bn=79883306;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50}",
+        clickTag3 =
+          "https://track.adform.net/C/?bn=79883308;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50}",
+        clickTag4 =
+          "https://track.adform.net/C/?bn=79883301;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50}",
+        clickTag5 =
+          "https://track.adform.net/C/?bn=79883303;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50}",
+        clickTag6 =
+          "https://track.adform.net/C/?bn=79883297;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50}",
+        clickTag7 =
+          "https://track.adform.net/C/?bn=79883307;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50}";
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      html,
+      body {
+        max-width: 100vw;
+        max-height: 100vh;
+        position: relative;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: sans-serif;
+        overflow: hidden;
+        line-height: 1;
+      }
+      html,
+      body,
+      #creative,
+      #player {
+        width: 100%;
+        height: 100%;
+      }
+      #creative,
+      #player {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .fitToFormat .seenthis-player {
+        background-color: #000;
+      }
+      .fitToFormat video {
+        object-fit: contain !important;
+      }
+      body {
+        background-image: url("https://video.seenthis.se/v2/ads/5rl3BY_rw/poster.jpeg");
+      }
+    </style>
+    <script>
+      var OmidVerificationClient = (() => {
+        var _ = Object.defineProperty;
+        var $ = Object.getOwnPropertyDescriptor;
+        var D = Object.getOwnPropertyNames;
+        var A = Object.prototype.hasOwnProperty;
+        var k = (e, t) => {
+            for (var i in t) _(e, i, { get: t[i], enumerable: !0 });
+          },
+          Z = (e, t, i, n) => {
+            if ((t && typeof t == "object") || typeof t == "function")
+              for (let r of D(t))
+                !A.call(e, r) &&
+                  r !== i &&
+                  _(e, r, {
+                    get: () => t[r],
+                    enumerable: !(n = $(t, r)) || n.enumerable,
+                  });
+            return e;
+          };
+        var G = (e) => Z(_({}, "__esModule", { value: !0 }), e);
+        var Ee = {};
+        k(Ee, { default: () => _e });
+        function F(...e) {
+          O(
+            () => {
+              throw new Error(
+                "Could not complete the test successfully - ",
+                ...e
+              );
+            },
+            () => console.error(...e)
+          );
+        }
+        function q(...e) {
+          O(
+            () => {},
+            () => console.error(...e)
+          );
+        }
+        function O(e, t) {
+          typeof jasmine < "u" && jasmine
+            ? e()
+            : typeof console < "u" && console && console.error && t();
+        }
+        function E(e, t) {
+          if (!t)
+            throw new Error(`Value for ${e} is undefined, null or blank.`);
+          if (typeof t != "string" && !(t instanceof String))
+            throw new Error(`Value for ${e} is not a string.`);
+          if (t.trim() === "")
+            throw new Error(`Value for ${e} is empty string.`);
+        }
+        function Q(e, t) {
+          if (t == null) throw new Error(`${e} must not be null or undefined.`);
+          if (typeof t != "number" || isNaN(t))
+            throw new Error(`Value for ${e} is not a number`);
+        }
+        function c(e, t) {
+          if (!t) throw new Error(`${e} must not be truthy.`);
+        }
+        function d(e, t) {
+          if ((Q(e, t), t < 0))
+            throw new Error(`${e} must be a positive number.`);
+        }
+        function j(e) {
+          return /\d+\.\d+\.\d+(-.*)?/.test(e);
+        }
+        function C(e, t) {
+          let i = e.split("-")[0].split("."),
+            n = t.split("-")[0].split(".");
+          for (let r = 0; r < ce; r++) {
+            let s = parseInt(i[r], 10),
+              a = parseInt(n[r], 10);
+            if (s > a) return !0;
+            if (s < a) return !1;
+          }
+          return !0;
+        }
+        function Y(e, t) {
+          return j(e) && C(e, P) ? t : JSON.stringify(t);
+        }
+        function H(e, t) {
+          return j(e) && C(e, P)
+            ? t || []
+            : t && typeof t == "string"
+            ? JSON.parse(t)
+            : [];
+        }
+        function K() {
+          let e = (t) => {
+            let i = (Math.random() * 16) | 0;
+            return t ? ((i & 3) | 8).toString(16) : i.toString(16);
+          };
+          return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (t) =>
+            e(t === "y")
+          );
+        }
+        function V(e, t) {
+          try {
+            return e.frames && !!e.frames[t];
+          } catch {
+            return !1;
+          }
+        }
+        function L(e) {
+          return B(e, he.VERIFICATION_SERVICE);
+        }
+        function B(e, t) {
+          return t + e;
+        }
+        function ee() {
+          return typeof omidExports > "u" ? null : omidExports;
+        }
+        function te(e, t) {
+          return e && (e[t] || (e[t] = {}));
+        }
+        function ie(e, t, i = ee()) {
+          if (!i) return;
+          let n = e.split("."),
+            r = n.slice(0, n.length - 1).reduce(te, i),
+            s = n[n.length - 1];
+          r[s] = t;
+        }
+        function N(e = void 0) {
+          return e != null && typeof e.top < "u" && e.top != null;
+        }
+        function R(e) {
+          if (e === o) return !1;
+          try {
+            if (typeof e.location.hostname > "u") return !0;
+            if (ne(e)) return !1;
+          } catch {
+            return !0;
+          }
+          return !1;
+        }
+        function ne(e) {
+          return e.x === "" || e.x !== "";
+        }
+        function T(e = void 0) {
+          return (
+            typeof e > "u" && typeof window < "u" && window && (e = window),
+            N(e) ? e : o
+          );
+        }
+        function U(e) {
+          return N(e) ? e.top : o;
+        }
+        function z(e, t) {
+          return t.reduce((i, n) => i && i[n], e);
+        }
+        function re(e, t, i, n) {
+          if (!R(t))
+            try {
+              let r = z(t, i);
+              if (r) return new me(r);
+            } catch {}
+          return n(t) ? new pe(e, t) : null;
+        }
+        function se(e, t, i, n) {
+          for (let r of t) {
+            let s = re(e, r, i, n);
+            if (s) return s;
+          }
+          return null;
+        }
+        function oe(e, t = le) {
+          let i = [],
+            n = z(e, ve);
+          return n && i.push(n), i.push(U(e)), se(e, i, ge, t);
+        }
+        function ae() {
+          let e = o.omid3p;
+          return e &&
+            typeof e.registerSessionObserver == "function" &&
+            typeof e.addEventListener == "function"
+            ? e
+            : null;
+        }
+        var p = { APP: "app", WEB: "web" },
+          g = { NONE: "NONE", DIRECT: "DIRECT", POST_MESSAGE: "POST_MESSAGE" },
+          f = "omid_message_guid",
+          l = "omid_message_method",
+          h = "omid_message_version",
+          m = "omid_message_args",
+          S = class e {
+            static isValidSerializedMessage(t) {
+              return (
+                !!t &&
+                t[f] !== void 0 &&
+                t[l] !== void 0 &&
+                t[h] !== void 0 &&
+                typeof t[f] == "string" &&
+                typeof t[l] == "string" &&
+                typeof t[h] == "string" &&
+                (t[m] === void 0 || t[m] !== void 0)
+              );
+            }
+            static deserialize(t) {
+              return new e(t[f], t[l], t[h], t[m]);
+            }
+            constructor(t, i, n, r = void 0) {
+              (this.guid = t),
+                (this.method = i),
+                (this.version = n),
+                (this.args = r);
+            }
+            serialize() {
+              let t = { [f]: this.guid, [l]: this.method, [h]: this.version };
+              return this.args !== void 0 && (t[m] = this.args), t;
+            }
+          },
+          u = S,
+          y = class {
+            constructor(t = void 0) {
+              (this.to = t), this.onMessage, (this.communicationType_ = g.NONE);
+            }
+            sendMessage(t, i) {}
+            handleMessage(t, i) {
+              this.onMessage && this.onMessage(t, i);
+            }
+            serialize(t) {
+              return JSON.stringify(t);
+            }
+            deserialize(t) {
+              return JSON.parse(t);
+            }
+            isDirectCommunication() {
+              return this.communicationType_ === g.DIRECT;
+            }
+            isCrossOrigin() {}
+          },
+          J = y,
+          M = { error: F, debug: q },
+          ue = "1.5.0-conny",
+          ce = 3,
+          P = "1.0.3",
+          de = "omid_v1_present",
+          X = "omid_v1_present_web",
+          W = "omid_v1_present_app",
+          fe = function (e) {
+            return { [p.APP]: W, [p.WEB]: X }[e];
+          },
+          le = function (e) {
+            return [de, X, W].some((t) => V(e, t));
+          },
+          b = function (e) {
+            for (let t of Object.values(p)) {
+              let i = fe(t);
+              if (V(e, i)) return t;
+            }
+            return null;
+          },
+          he = {
+            SESSION_SERVICE: "SessionService.",
+            VERIFICATION_SERVICE: "VerificationService.",
+          },
+          o = window,
+          I = class e extends J {
+            constructor(t = void 0) {
+              super(t),
+                (this.communicationType_ = g.DIRECT),
+                (this.handleExportedMessage =
+                  e.prototype.handleExportedMessage.bind(this));
+            }
+            sendMessage(t, i = this.to) {
+              if (!i)
+                throw new Error(
+                  "Message destination must be defined at construction time or when sending the message."
+                );
+              i.handleExportedMessage(t.serialize(), this);
+            }
+            handleExportedMessage(t, i) {
+              u.isValidSerializedMessage(t) &&
+                this.handleMessage(u.deserialize(t), i);
+            }
+            isCrossOrigin() {
+              return !1;
+            }
+          },
+          me = I,
+          w = class extends J {
+            static isCompatibleContext(t) {
+              return !!(t && t.addEventListener && t.postMessage);
+            }
+            constructor(t, i = o) {
+              super(i),
+                (this.communicationType_ = g.POST_MESSAGE),
+                t.addEventListener("message", (n) => {
+                  if (typeof n.data != "object") return;
+                  let r = n.data;
+                  if (!u.isValidSerializedMessage(r)) return;
+                  let s = u.deserialize(r);
+                  n.source && this.handleMessage(s, n.source);
+                });
+            }
+            sendMessage(t, i = this.to) {
+              if (!i)
+                throw new Error(
+                  "Message destination must be defined at construction time or when sending the message."
+                );
+              i.postMessage(t.serialize(), "*");
+            }
+            isCrossOrigin() {
+              return this.to ? R(this.to) : !0;
+            }
+          },
+          pe = w,
+          ge = ["omid", "v1_VerificationServiceCommunication"],
+          ve = ["omidVerificationProperties", "serviceWindow"],
+          x = ue,
+          xe,
+          v = class {
+            constructor(e = void 0) {
+              if (((this.communication = e || oe(T())), this.communication))
+                this.communication.onMessage = this.handleMessage_.bind(this);
+              else {
+                let i = ae();
+                i && (this.omid3p = i);
+              }
+              (this.remoteTimeouts_ = 0),
+                (this.remoteIntervals_ = 0),
+                (this.callbackMap_ = {}),
+                (this.imgCache_ = []);
+              let t = o.omidVerificationProperties;
+              this.injectionId_ = t ? t.injectionId : void 0;
+            }
+            isSupported() {
+              return this.getEnvironment() === p.WEB && !this.injectionId_
+                ? !1
+                : !!(this.communication || this.omid3p);
+            }
+            getEnvironment() {
+              let e = T();
+              return this.injectionSource() || b(e) || b(U(e));
+            }
+            injectionSource() {
+              let e = o.omidVerificationProperties;
+              if (e && e.injectionSource) return e.injectionSource;
+            }
+            registerSessionObserver(e, t = void 0) {
+              if ((c("functionToExecute", e), this.omid3p)) {
+                this.omid3p.registerSessionObserver(e, t, this.injectionId_);
+                return;
+              }
+              this.sendMessage_("addSessionListener", e, t, this.injectionId_);
+            }
+            addEventListener(e, t) {
+              if ((E("eventType", e), c("functionToExecute", t), this.omid3p)) {
+                this.omid3p.addEventListener(e, t, this.injectionId_);
+                return;
+              }
+              this.sendMessage_("addEventListener", t, e, this.injectionId_);
+            }
+            sendUrl(e, t = void 0, i = void 0) {
+              if ((E("url", e), o.document && o.document.createElement)) {
+                this.sendUrlWithImg_(e, t, i);
+                return;
+              }
+              this.sendMessage_(
+                "sendUrl",
+                (n) => {
+                  n && t ? t() : !n && i && i();
+                },
+                e
+              );
+            }
+            sendUrlWithImg_(e, t = void 0, i = void 0) {
+              let n = o.document.createElement("img");
+              this.imgCache_.push(n);
+              let r = (s) => {
+                let a = this.imgCache_.indexOf(n);
+                a >= 0 && this.imgCache_.splice(a, 1), s && s();
+              };
+              n.addEventListener("load", r.bind(this, t)),
+                n.addEventListener("error", r.bind(this, i)),
+                (n.src = e);
+            }
+            injectJavaScriptResource(e, t, i) {
+              E("url", e),
+                o.document
+                  ? this.injectJavascriptResourceUrlInDom_(e, t, i)
+                  : this.sendMessage_(
+                      "injectJavaScriptResource",
+                      (n, r) => {
+                        if (!n) {
+                          M.error(
+                            "Service failed to load JavaScript resource."
+                          ),
+                            i();
+                          return;
+                        }
+                        this.evaluateJavaScript_(r, e), t();
+                      },
+                      e
+                    );
+            }
+            injectJavascriptResourceUrlInDom_(e, t, i) {
+              let n = o.document,
+                r = n.body,
+                s = n.createElement("script");
+              (s.onload = t),
+                (s.onerror = i),
+                (s.src = e),
+                (s.type = "application/javascript"),
+                r.appendChild(s);
+            }
+            evaluateJavaScript_(javaScript, url) {
+              try {
+                eval(javaScript);
+              } catch (e) {
+                M.error(
+                  `Error evaluating the JavaScript resource from "${url}".`
+                );
+              }
+            }
+            setTimeout(e, t) {
+              if (
+                (c("functionToExecute", e),
+                d("timeInMillis", t),
+                this.hasTimeoutMethods_())
+              )
+                return o.setTimeout(e, t);
+              let i = this.remoteTimeouts_++;
+              return this.sendMessage_("setTimeout", e, i, t), i;
+            }
+            clearTimeout(e) {
+              if ((d("timeoutId", e), this.hasTimeoutMethods_())) {
+                o.clearTimeout(e);
+                return;
+              }
+              this.sendOneWayMessage_("clearTimeout", e);
+            }
+            setInterval(e, t) {
+              if (
+                (c("functionToExecute", e),
+                d("timeInMillis", t),
+                this.hasIntervalMethods_())
+              )
+                return o.setInterval(e, t);
+              let i = this.remoteIntervals_++;
+              return this.sendMessage_("setInterval", e, i, t), i;
+            }
+            clearInterval(e) {
+              if ((d("intervalId", e), this.hasIntervalMethods_())) {
+                o.clearInterval(e);
+                return;
+              }
+              this.sendOneWayMessage_("clearInterval", e);
+            }
+            hasTimeoutMethods_() {
+              return (
+                typeof o.setTimeout == "function" &&
+                typeof o.clearTimeout == "function"
+              );
+            }
+            hasIntervalMethods_() {
+              return (
+                typeof o.setInterval == "function" &&
+                typeof o.clearInterval == "function"
+              );
+            }
+            handleMessage_(e, t) {
+              let { method: i, guid: n, args: r } = e;
+              if (i === "response" && this.callbackMap_[n]) {
+                let s = H(x, r);
+                this.callbackMap_[n].apply(this, s);
+              }
+              i === "error" && window.console && M.error(r);
+            }
+            sendOneWayMessage_(e, ...t) {
+              this.sendMessage_(e, null, ...t);
+            }
+            sendMessage_(e, t, ...i) {
+              if (!this.communication) return;
+              let n = K();
+              t && (this.callbackMap_[n] = t);
+              let r = new u(n, L(e), x, Y(x, i));
+              this.communication.sendMessage(r);
+            }
+          };
+        ie("OmidVerificationClient", v);
+        var _e = v;
+        return G(Ee);
+      })();
+      window.OmidVerificationClient = OmidVerificationClient.default;
+    </script>
+    <script>
+      (() => {
+        const g = () => {
+          const a = "https://t.seenthis.se";
+          function c() {
+            return (
+              typeof ReportingObserver == "function" &&
+              typeof navigator.sendBeacon == "function"
+            );
+          }
+          if (!c()) return;
+          function d(e) {
+            const n = (e && e.body && e.body.message) || "",
+              r = [
+                { keyword: "CPU", reason: "CPU" },
+                { keyword: "network usage", reason: "network" },
+              ].find(({ keyword: t }) => n.includes(t));
+            return r ? r.reason : "other";
+          }
+          function u(e) {
+            const n = window.seenthisPlayer || {},
+              s = n.trackerId || null,
+              r = n.videoId || null,
+              t = e
+                .map((i) => {
+                  try {
+                    const o = JSON.parse(JSON.stringify(i)),
+                      f = d(i);
+                    return (
+                      Object.assign(o, {
+                        video_id: r,
+                        tracker_id: s,
+                        reason: f,
+                      }),
+                      o
+                    );
+                  } catch {
+                    return null;
+                  }
+                })
+                .filter(Boolean);
+            t.length > 0 &&
+              navigator.sendBeacon(
+                `${a}/api/post/message?id=heavy-ads-reporting`,
+                JSON.stringify(t)
+              );
+          }
+          new ReportingObserver(
+            (e) => {
+              try {
+                u(e);
+              } catch {}
+            },
+            { buffered: !0 }
+          ).observe();
+        };
+        g();
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="player"></div>
+    <div id="creative"></div>
+    <script>
+      !(function (n) {
+        var i = {};
+        function a(t) {
+          if (i[t]) return i[t].exports;
+          var e = (i[t] = { i: t, l: !1, exports: {} });
+          return n[t].call(e.exports, e, e.exports, a), (e.l = !0), e.exports;
+        }
+        (a.m = n),
+          (a.c = i),
+          (a.d = function (t, e, n) {
+            a.o(t, e) ||
+              Object.defineProperty(t, e, {
+                configurable: !1,
+                enumerable: !0,
+                get: n,
+              });
+          }),
+          (a.n = function (t) {
+            var e =
+              t && t.__esModule
+                ? function () {
+                    return t["default"];
+                  }
+                : function () {
+                    return t;
+                  };
+            return a.d(e, "a", e), e;
+          }),
+          (a.o = function (t, e) {
+            return Object.prototype.hasOwnProperty.call(t, e);
+          }),
+          (a.p = ""),
+          a((a.s = 2));
+      })([
+        function (t, e, n) {
+          "use strict";
+          function c(t) {
+            if (Array.isArray(t)) {
+              for (var e = 0, n = Array(t.length); e < t.length; e++)
+                n[e] = t[e];
+              return n;
+            }
+            return Array.from(t);
+          }
+          var d = function (t, e) {
+            return Math.round(t / e) * e;
+          };
+          t.exports = {
+            trackEvent: function (t) {
+              var e,
+                n =
+                  /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(
+                    "12hmaprzj25idhrk5k3c2blfw9o42hmaprzj52n46taav62mjeg6mk735rgniab8111i258p91hxyo6dia3ed9ed49b1qm3lx0dc12t3hlynd3alzoda8e3hacn309f2rnmyl5mg2hw9pl64h4wlq1l1f13ft"
+                  ),
+                i = n ? "https://t.seenthis.se" : "https://t.seenthis.se/v3",
+                a = new Date().getTime(),
+                r = [d(window.innerWidth, 10), d(window.innerHeight, 10)].join(
+                  "x"
+                ),
+                o = [
+                  i,
+                  "12hmaprzj25idhrk5k3c2blfw9o42hmaprzj52n46taav62mjeg6mk735rgniab8111i258p91hxyo6dia3ed9ed49b1qm3lx0dc12t3hlynd3alzoda8e3hacn309f2rnmyl5mg2hw9pl64h4wlq1l1f13ft",
+                  t,
+                  (n ? r : "3") + "?_=" + a,
+                ].join("/");
+              try {
+                var s = new XMLHttpRequest();
+                s.open("GET", o),
+                  s.send(),
+                  (e = t),
+                  window.dispatchEvent(
+                    new CustomEvent("@seenthis-ab/trackEvent", {
+                      detail: { id: e },
+                    })
+                  ),
+                  (window.seenthisController.trackedEvents = [].concat(
+                    c(
+                      new Set(
+                        [].concat(
+                          c(window.seenthisController.trackedEvents || []),
+                          [e]
+                        )
+                      )
+                    )
+                  ));
+              } catch (t) {}
+            },
+          };
+        },
+        function (t, e, n) {
+          "use strict";
+          t.exports = {
+            init: function (t) {
+              t();
+            },
+            click: function (t) {
+              window.open(window[t], "_blank");
+            },
+          };
+        },
+        function (t, e, n) {
+          "use strict";
+          n(3);
+          var i = n(0),
+            a = n(4),
+            r = n(5),
+            o = n(8),
+            s = n(9),
+            c = n(10);
+          (window.seenthisController = r),
+            a.init(),
+            o.init(),
+            s.init(),
+            i.trackEvent(12),
+            "loading" === document.readyState
+              ? document.addEventListener("DOMContentLoaded", c.init)
+              : c.init();
+        },
+        function (t, e, n) {
+          "use strict";
+          String.prototype.includes ||
+            (String.prototype.includes = function (t, e) {
+              return (
+                "number" != typeof e && (e = 0),
+                !(e + t.length > this.length) && -1 !== this.indexOf(t, e)
+              );
+            });
+        },
+        function (t, e, n) {
+          "use strict";
+          var i = n(1),
+            a = n(0),
+            s = "clickTag1";
+          function r(t) {
+            try {
+              var e =
+                  ((r = t),
+                  (o = window.primaryClickTagName || s),
+                  r === s ? o : o.replace(/\d+$/, "") + r.match(/\d+$/)[0]),
+                n = window[e];
+              if (!n) return;
+              var i = (function () {
+                var t = (function () {
+                  var t =
+                      0 < arguments.length && void 0 !== arguments[0]
+                        ? arguments[0]
+                        : "clickTag",
+                    e = new URL(window.location.href).searchParams.get(t);
+                  if (e)
+                    try {
+                      return decodeURIComponent(e);
+                    } catch (t) {
+                      return e;
+                    }
+                  return null;
+                })();
+                if (t) return t;
+                var e = window.primaryClickTagName || s;
+                return window[e];
+              })()
+                .split("http")
+                .slice(0, -1)
+                .join("http");
+              if (!i || (void 0 !== (a = i) && 0 === n.indexOf(a))) return;
+              window[e] = i + n;
+            } catch (e) {
+              console.error("Failed to add macro to click tag " + t, e);
+            }
+            var a, r, o;
+          }
+          function o(t) {
+            r(t), a.trackEvent(2), i.click(t);
+          }
+          t.exports = {
+            init: function () {
+              window.openLink = o;
+            },
+          };
+        },
+        function (t, e, n) {
+          "use strict";
+          var a = n(1),
+            r = n(6);
+          t.exports = {
+            init: function (t, e, n, i) {
+              a.init(function () {
+                r.init("#player", t, e, n, i);
+              });
+            },
+            show: function () {},
+            hide: function () {},
+          };
+        },
+        function (t, e, n) {
+          "use strict";
+          var h = n(7),
+            y = function (t, e) {
+              return ["https://video.seenthis.se/v2/creatives", t, e].join("/");
+            };
+          t.exports = {
+            init: function (t, e, n, i) {
+              var a =
+                4 < arguments.length && void 0 !== arguments[4]
+                  ? arguments[4]
+                  : {};
+              window.seenthisPlayer = new SeenthisPlayer(t, e, n, a);
+              try {
+                var r = !1,
+                  o = document.querySelector("#creative"),
+                  s = function () {
+                    r &&
+                      "none" === o.style.display &&
+                      ((o.style.display = "block"), (r = !1));
+                  };
+                window.seenthisPlayer.video.addEventListener(
+                  "play-failed",
+                  function () {
+                    (o.style.display = "none"), (r = !0);
+                  }
+                ),
+                  window.seenthisPlayer.video.addEventListener(
+                    "play-success",
+                    s
+                  ),
+                  window.seenthisPlayer.video.addEventListener("timeupdate", s);
+              } catch (t) {}
+              var c,
+                d,
+                u,
+                l,
+                f,
+                m,
+                v,
+                w,
+                p = new h(window.seenthisPlayer, window, document);
+              (window.frameUpdate = p.frameUpdate),
+                (v = i),
+                (w = document.createElement("script")).setAttribute(
+                  "src",
+                  y(v, "script.js")
+                ),
+                w.setAttribute("crossOrigin", "anonymous"),
+                document.body.appendChild(w),
+                (l = i),
+                (f = document.head),
+                ((m = document.createElement("link")).type = "text/css"),
+                (m.rel = "stylesheet"),
+                (m.href = y(l, "style.css")),
+                f.appendChild(m),
+                (c = i),
+                (d = function () {
+                  var e, n, i;
+                  (e = window),
+                    (n = function () {
+                      window.startCreative();
+                    }),
+                    (i = 0),
+                    (function t() {
+                      e["startCreative"]
+                        ? n()
+                        : 5e3 < i || ((i += 1), setTimeout(t, 2));
+                    })();
+                }),
+                (u = new XMLHttpRequest())["op" + "en"](
+                  "GET",
+                  y(c, "index.html")
+                ),
+                u.send(null),
+                (u.onreadystatechange = function () {
+                  4 === u.readyState &&
+                    ((document.getElementById("creative").innerHTML =
+                      u.responseText),
+                    d());
+                });
+            },
+          };
+        },
+        function (t, e, n) {
+          "use strict";
+          var c = function (t, e) {
+              return -1 !== t.className.indexOf(e);
+            },
+            d = function (t, e, n) {
+              var i,
+                a,
+                r = n ? " " + e : "";
+              t.className =
+                ((i = t.className), (a = e), i.split(a).join(""))
+                  .split(" ")
+                  .filter(function (t) {
+                    return !!t;
+                  })
+                  .join(" ") + r;
+            },
+            r = function (t, e) {
+              var n = t.style.transitionDuration;
+              (t.style.transitionDuration = "0s"),
+                d(t, "is-active", !1),
+                d(t, "animate-in", !1),
+                d(t, "animate-out", !1),
+                (t.isActive = void 0),
+                setTimeout(function () {
+                  t.style.transitionDuration = n;
+                }, 0);
+            };
+          t.exports = function (t, n, i) {
+            var a = this;
+            (a.player = t),
+              (a.lastTime = null),
+              (this.frameUpdate = function (t) {
+                (a.callback = t),
+                  (a.animatedElements = i.querySelectorAll("[data-start]"));
+                for (var e = 0; e < a.animatedElements.length; e++)
+                  a.animatedElements[e].isActive = !1;
+                !(function t() {
+                  if (
+                    (n.requestAnimationFrame
+                      ? n.requestAnimationFrame(t)
+                      : setTimeout(t, 1e3 / 30),
+                    a.player)
+                  ) {
+                    var e = a.player.currentTime;
+                    "function" == typeof e && (e = e()),
+                      void 0 !== a.lastTime && 0.2 < a.lastTime - e
+                        ? ((a.lastTime = void 0),
+                          (function (t) {
+                            for (
+                              var e = 0;
+                              e < t.animatedElements.length;
+                              e++
+                            ) {
+                              var n = t.animatedElements[e];
+                              r(n);
+                            }
+                          })(a))
+                        : e !== a.lastTime &&
+                          (0 < a.animatedElements.length &&
+                            (function (t, e) {
+                              for (
+                                var n = 0;
+                                n < t.animatedElements.length;
+                                n++
+                              ) {
+                                var i = t.animatedElements[n];
+                                (a = i),
+                                  (r = e),
+                                  void 0,
+                                  (o = parseFloat(
+                                    a.getAttribute("data-start")
+                                  )),
+                                  (s = parseFloat(
+                                    a.getAttribute("data-duration")
+                                  )),
+                                  (a.isActive = !!(o <= r && r < o + s)),
+                                  a.isActive && !c(a, "is-active")
+                                    ? (d(a, "is-active", !0),
+                                      d(a, "animate-in", !0),
+                                      d(a, "animate-out", !1))
+                                    : !a.isActive &&
+                                      c(a, "is-active") &&
+                                      (d(a, "is-active", !1),
+                                      d(a, "animate-in", !1),
+                                      d(a, "animate-out", !0));
+                              }
+                              var a, r, o, s;
+                            })(a, e),
+                          a.callback && a.callback(e),
+                          (a.lastTime = e));
+                  }
+                })();
+              });
+          };
+        },
+        function (t, e, n) {
+          "use strict";
+          t.exports = { init: function () {} };
+        },
+        function (t, e, n) {
+          "use strict";
+          var i = n(0),
+            a = function (t) {
+              var e = window.seenthisController.customEvents,
+                n = void 0 === e ? {} : e;
+              n[t] && i.trackEvent(n[t]);
+            };
+          t.exports = {
+            init: function () {
+              window.trackCustomEvent = a;
+            },
+          };
+        },
+        function (t, e, n) {
+          "use strict";
+          var i = n(0);
+          t.exports = {
+            didInit: !1,
+            init: function () {
+              if (this.didInit) return !1;
+              var t = !(this.didInit = !0),
+                r = function () {
+                  t || ((t = !0), i.trackEvent(1200));
+                };
+              if ("seenthis_tag_container" === window.name) {
+                var o = setTimeout(function () {
+                  r();
+                }, 300);
+                window.addEventListener("message", function (t) {
+                  if (t && t.data && t.data.name) {
+                    if ("seenthis-tag" !== t.data.name) return;
+                    clearTimeout(o);
+                    var e = t.data.params;
+                    switch (t.data.event) {
+                      case "impression":
+                        r();
+                        break;
+                      case "init":
+                        if (e.clickTag) {
+                          var n = e.clickTag,
+                            i = n.indexOf("%3A%2F%2F"),
+                            a = window.primaryClickTagName || "clickTag1";
+                          window[a] = n && -1 !== i && i < 40 ? unescape(n) : n;
+                        }
+                        e.impressionOccurred && r();
+                    }
+                  }
+                }),
+                  window.seenthisTag &&
+                    window.seenthisTag.impressionOccurred &&
+                    (r(), clearTimeout(o)),
+                  window.parent.postMessage({ name: "seenthis-tag-init" }, "*");
+              } else {
+                if (!window.OmidVerificationClient) return void r();
+                try {
+                  var e = new window.OmidVerificationClient();
+                  if (e && e.isSupported())
+                    return void e.addEventListener("impression", function (t) {
+                      return r();
+                    });
+                  r();
+                } catch (t) {
+                  console.error("Error initializing OMID", t), r();
+                }
+              }
+            },
+          };
+        },
+      ]);
+    </script>
+    <script>
+      var timer = setInterval(function () {
+        window.seenthisInit &&
+          window.SeenthisPlayer &&
+          (clearInterval(timer), window.seenthisInit());
+      }, 20);
+    </script>
+    <script src="https://video.seenthis.se/v2/player/110/player.js"></script>
+    <img
+      src="https://track.adform.net/adfserve/?bn=79883295;1x1inv=1;srctype=3;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50};ord=[timestamp]"
+      border="0"
+      width="1"
+      height="1"
+    />
+    <script>
+      /* global window, document, Event */
+      window.top.postMessage(
+        JSON.stringify({
+          sender: "high-impact-js",
+          action: "AD_RENDERED",
+        }),
+        "*"
+      );
+
+      window.parent.dispatchEvent(new Event("resize"));
+
+      function getAdIframe(bannerHeight) {
+        let n = window.parent;
+        let r = null;
+        const s = `position:absolute !important;width:100vw !important;height:${bannerHeight} !important;inset:0 !important;`;
+        const frames = [];
+        try {
+          for (; n != top.window && n.document; ) {
+            r = n;
+            frames.push(n);
+            n = n.parent;
+          }
+        } catch (e) {}
+        for (let i = 0; i < frames.length - 1; i++) {
+          try {
+            frames[i].frameElement &&
+              (frames[i].frameElement.style.cssText = s);
+          } catch (e) {}
+        }
+        return r;
+      }
+
+      const frameHeight = window.frameElement.style.height;
+      const adIframeHeight = frameHeight.endsWith("px") ? frameHeight : "100vh";
+
+      const topIframe = getAdIframe(adIframeHeight);
+      try {
+        const style = document.createElement("style");
+        style.innerHTML =
+          "adfm-ad, #sf_align, .adform-adbox, .adform-adbox img {width: 100% !important; height: 100% !important; object-fit: cover; position: absolute;} iframe[data-contents*='adform']{width: 100vw !important;height: 100vh !important;}\n" +
+          "    [target='_blank'] img[src*='adnxs']{object-fit: cover !important;width: 100% !important;height: 100% !important;position: fixed;}\n" +
+          `    .GoogleActiveViewClass, .GoogleCreativeContainerClass, .GoogleActiveViewElement {transform: translate(calc(-50% + 50vw), 0); width: 100vw !important; height: ${adIframeHeight} !important; display: block !important;} .GoogleActiveViewClass img, .GoogleActiveViewElement img {width: 100vw !important; height: 100vh !important; object-fit: cover !important;} .GoogleActiveViewClass iframe {width: 100vw !important; height: 100vh !important;}.dcmads {width: 100% !important; height: 100% !important;}\n` +
+          "    iframe[src*='net/sadbundle/']{width: 100vw !important;height: 100vh !important;}iframe[id*='google_ads_iframe']{width: 100vw !important;height: 100vh !important;}";
+        topIframe.document.head.appendChild(style);
+      } catch (e) {}
+    </script>
+  </body>
+</html>
